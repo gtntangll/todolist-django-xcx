@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+ 
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 登录 </button>
+    <block wx:else>
+      <view class='head'>
+        <view class='head-left'>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+        </view>
+        <view class='head-right'>
+          <view class='userinfo-nickname'>{{userInfo.nickName}}</view>
+          <navigator class='addbtn' hover-class="addbtn-hover" hover-start-time="50" hover-stay-time="50" url="/pages/addtask/addtask">添加任务</navigator>
+          <view class='task-style-num'>
+            <view><icon class='red'></icon>22</view>
+            <view><icon class='green'></icon>11</view>
+            <view><icon class='blue'></icon>23</view>
+            <view><icon class='yellow'></icon>05</view>
+          </view>
+        </view>
+      </view>
+      <view class='tasklist-btn'>
+        <view class='tasklist-todo active'>进行中</view>
+        <view class='tasklist-done'>已完成</view>
+      </view>
+      <scroll-view class='tasklist-contain' scroll-y>
+        <block wx:if="{{hasTaskList}}">
+          <navigator class='tasklist-item' hover-stay-time="50" url='/pages/taskdetail/taskdetail'>
+            <view class='item-left yellow'>不急\n次要</view>
+            <view class='item-right'>
+              <view class='item-title'>背单词</view>
+              <view class='item-deadline'>2017-01-02 11:31 截止</view>
+            </view>
+          </navigator>
+          <navigator class='tasklist-item' hover-stay-time="50" url='/pages/taskdetail/taskdetail'>
+            <view class='item-left blue'>紧急\n次要</view>
+            <view class='item-right'>
+              <view class='item-title'>背单词</view>
+              <view class='item-deadline'>2017-01-02 11:31 截止</view>
+            </view>
+          </navigator>
+          <navigator class='tasklist-item' hover-stay-time="50" url='/pages/taskdetail/taskdetail'>
+            <view class='item-left green'>不急\n重要</view>
+            <view class='item-right'>
+              <view class='item-title'>背单词</view>
+              <view class='item-deadline'>2017-01-02 11:31 截止</view>
+            </view>
+          </navigator>
+          <navigator class='tasklist-item' hover-stay-time="50" url='/pages/taskdetail/taskdetail'>
+            <view class='item-left red'>紧急\n重要</view>
+            <view class='item-right'>
+              <view class='item-title'>背单词</view>
+              <view class='item-deadline'>2017-01-02 11:31 截止</view>
+            </view>
+          </navigator>
+          <view class='getmore' wx:if="{{!allLoad}}">点击加载更多</view>
+          <view class='getmore' wx:else>没有更多</view>
+        </block>
+        <block wx:else>
+          <view class='task-null'>您这儿还没有任务呢</view>
+        </block>
+      </scroll-view> 
+    </block>
+  
+</view>

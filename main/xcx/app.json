@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/addtask/addtask",
+    "pages/taskdetail/taskdetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "ToDoList",
+    "navigationBarTextStyle": "black"
+  }
+}
