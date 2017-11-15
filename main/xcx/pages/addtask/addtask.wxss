@@ -1,1 +1,122 @@
-/* pages/addtask/addtask.wxss */
+/* addtask.wxss */
+
+.head {
+  background-color: #0a73cc;
+  width: 100vw;
+  height: 12vw;
+  color: #eee;
+  text-align: center;
+}
+
+.back {
+  width: 20vw;
+  height: 12vw;
+  float: left;
+  background-color: #eee;
+  border-radius: 0 0 5vw 0;
+  text-align: center;
+  line-height: 12vw;
+  color: #0a73cc;
+  font-size: 16px;
+}
+
+.head-title {
+  width: 20vw;
+  height: 12vw;
+  line-height: 12vw;
+  float: left;
+  margin-left: 20vw;
+}
+
+.addtask-wrap {
+  height: 125vw;
+  width: 98vw;
+  background-color: #eee;
+  margin: 5vw auto;
+  border-radius: 3vw 3vw 0 0;
+  border-bottom: 2px #fff dashed;
+}
+
+.task-info {
+  height: 100vw;
+  width: 98vw;
+  background-color: #0a73cc;
+  border-radius: 3vw 3vw 0 0;
+  border-bottom: 2px #eee dashed;
+  overflow: hidden;
+}
+
+.stylepicker,.deadlinepicker {
+  height: 10vw;
+  width: 80vw;
+  margin: 2vw auto 0;
+  color: #eee;
+}
+
+.task-title {
+  width: 22vw;
+  float: left;
+  margin-left: 9vw;
+  height: 12vw;
+  line-height: 12vw;
+  color: #eee;
+}
+
+.task-content {
+  margin-left: 9vw;
+  height: 10vw;
+  line-height: 12vw;
+  color: #eee;
+}
+
+.task-title-text {
+  padding-left: 2vw;
+  font-size: 14px;
+  height: 8vw;
+  line-height: 8vw;
+  margin-top: 1vw;
+  float: left;
+  width: 58vw;
+  background: #fafbfc;
+  border-radius: 2vw;
+  border: 2px #428BCA solid;
+}
+
+.task-detail {
+  width: 100vw;
+  overflow: hidden;
+}
+
+.task-content-text {
+  padding: 2vw;
+  font-size: 14px;
+  height: 45vw;
+  width: 80vw;
+  margin: 1vw auto;
+  background: #fafbfc;
+  border-radius: 2vw;
+  border: 2px #428BCA solid;
+}
+
+.btn-area {
+  width: 84vw;
+  margin: 4vw auto;
+  overflow: hidden;
+}
+
+.btn-area>button {
+  width: 40vw;
+  height: 12vw;
+}
+
+.reset-btn {
+  float: left;
+  background-color: #0faeff;
+  color: #fff;
+}
+
+.submit-btn {
+  float: right;
+  background-color: #0a73cc;
+  color: #eee;
+}

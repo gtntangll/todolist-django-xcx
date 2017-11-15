@@ -1,2 +1,41 @@
 <!--addtask.wxml-->
-<view class="container">添加任务</view>
+<view class="container">
+  <view class='head'>
+    <view class='back'>返回</view>
+    <view class='head-title'>添加任务</view>
+  </view>
+  <view class='addtask-wrap'>
+    <view class='task-info'>
+      <form>
+        <view class="section">
+          <view class="style-section"></view>
+          <picker bindchange="choosestyle" value="{{styleindex}}" range="{{style}}">
+            <view class="stylepicker">
+              任务类型: {{style[styleindex]}} ▾ 
+            </view>
+          </picker>
+        </view>
+       <view class="section">
+        <view class="deadline-section"></view>
+        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+          <view class="deadlinepicker">
+            截止日期: {{date}} ▾
+          </view>
+        </picker>
+      </view>
+      <view class='task-detail'>
+        <view class='task-title'>任务标题:</view>
+        <input class='task-title-text' placeholder="在此输入任务标题"/>
+      </view>
+      <view class='task-detail'>
+        <view class='task-content'>任务内容:</view>
+        <textarea class='task-content-text' placeholder="在此输入任务内容"/>
+      </view>
+      </form>
+    </view>
+    <view class='btn-area'>
+      <button formType="reset" class='reset-btn'>重置</button>
+      <button formType="submit" class='submit-btn'>提交</button>
+    </view>
+  </view>
+</view>
