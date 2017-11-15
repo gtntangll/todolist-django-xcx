@@ -1,8 +1,7 @@
 <!--taskdetail.wxml-->
-<!--addtask.wxml-->
 <view class="container">
   <view class='head'>
-    <view class='back'>返回</view>
+    <navigator class='back' open-type='navigateBack'>返回</navigator>
     <view class='head-title'>任务详情</view>
   </view>
   <view class='taskdetail-wrap'>

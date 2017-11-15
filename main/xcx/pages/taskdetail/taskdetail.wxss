@@ -1,5 +1,4 @@
-/* pages/taskdetail/taskdetail.wxss */
-/* addtask.wxss */
+/* taskdetail.wxss */
 
 .head {
   background-color: #0a73cc;
