@@ -1,2 +1,27 @@
 <!--taskdetail.wxml-->
-<text>任务详情</text>
+<!--addtask.wxml-->
+<view class="container">
+  <view class='head'>
+    <view class='back'>返回</view>
+    <view class='head-title'>任务详情</view>
+  </view>
+  <view class='taskdetail-wrap'>
+    <view class='task-info'>
+      <view class="style-info">任务类型: 紧急重要</view>
+      <view class="deadline-info">截止日期: 2017-01-01</view>
+      <view class='task-detail'>
+        <view class='task-title'>任务标题:</view>
+        <view class='task-title-text'>背单词呀！</view>
+      </view>
+      <view class='task-detail'>
+        <view class='task-content'>任务内容:</view>
+        <view class='task-content-text'>任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容任务内容!</view>
+      </view>
+    </view>
+    <view class='btn-area'>
+      <button class='delete-btn'>删除</button>
+      <button class='done-btn'>完成</button>
+    </view>
+  </view>
+</view>
+
